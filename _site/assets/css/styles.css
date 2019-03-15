@@ -1,2 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif; }
+
+h1, h2, h3 {
+  font-family: "Markazi Text", serif;
+  font-weight: normal; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
 .current {
   outline: 1px solid red; }
+
+@font-face {
+  font-family: 'Markazi Text';
+  src: url("../fonts/MarkaziText-Regular.woff2") format("woff2"), url("../fonts/MarkaziText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Cabin';
+  src: url("../fonts/Cabin-Regular.woff2") format("woff2"), url("../fonts/Cabin-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Cabin';
+  src: url("../fonts/Cabin-SemiBold.woff2") format("woff2"), url("../fonts/Cabin-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Cabin';
+  src: url("../fonts/Cabin-Bold.woff2") format("woff2"), url("../fonts/Cabin-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Cabin';
+  src: url("../fonts/Cabin-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Cabin-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic; }
+@font-face {
+  font-family: 'Cabin';
+  src: url("../fonts/Cabin-Medium.woff2") format("woff2"), url("../fonts/Cabin-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Cabin';
+  src: url("../fonts/Cabin-MediumItalic.woff2") format("woff2"), url("../fonts/Cabin-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: 'Cabin';
+  src: url("../fonts/Cabin-BoldItalic.woff2") format("woff2"), url("../fonts/Cabin-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: 'Cabin';
+  src: url("../fonts/Cabin-Italic.woff2") format("woff2"), url("../fonts/Cabin-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }

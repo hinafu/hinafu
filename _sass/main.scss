@@ -1,3 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Cabin", sans-serif;
+}
+
+h1, h2, h3 {
+	font-family: "Markazi Text", serif;
+	font-weight: normal;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
 .current {
 	outline: 1px solid red;
 }
