@@ -2,27 +2,55 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Title...</title>
+		<title>Home</title>
 		<link href="https://fonts.googleapis.com/css?family=Markazi+Text:400,500,600,700" rel="stylesheet">
 		<link rel="stylesheet" href="/assets/css/styles.css">
+		<link rel="stylesheet" href="/assets/css/slick.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/main.js"></script>
 	</head>
 	<body>
-		<header>
-			<div class="header__logo">
-				<img src="" alt="">
-			</div>
-			<div class="header__text">
-				<h1>Name</h1>
-				<h2>Alt</h2>
-			</div>
-		</header>
+		<div class="header__wrapper">
+			<header>
+				<div class="header__page">
+					<div class="header__logo">
+						<i class="icon-logo"></i>
+					</div>
+					<div class="header__text">
+						<h1>Name</h1>
+						<h2>Alt</h2>
+					</div>
+				</div>
+				<div class="header__background">
+					<div class="header__background__over"></div>
+					<div class="header__background__list">
+						
+						
+						<div class="header__background__img" style="background-image: url('/assets/img/bckgrnd/1.jpg')"></div>
+						
+						<div class="header__background__img" style="background-image: url('/assets/img/bckgrnd/2.jpg')"></div>
+						
+					</div>
+				</div>
+			</header>
 
-		<section class="section__menu">
-			<nav>
+			<section class="section__menu">
+				<div class="header__page">
+					<div class="header__logo">
+						<i class="icon-logo"></i>
+					</div>
+					<div class="header__text">
+						<h1>Name</h1>
+						<h2>Alt</h2>
+					</div>
+				</div>
+				<nav>
 	
-		<a href="/" class="current">Home</a>
+		<a href="/" class="menu__current">Home</a>
 	
-		<a href="/about.html" >About Me</a>
+		<a href="/about.html" >About me</a>
 	
 		<a href="/research.html" >Research</a>
 	
@@ -35,35 +63,104 @@
 		<a href="/external.html" >External Links</a>
 	
 </nav>
-		</section>
+			</section>
+		</div>
 
 		<main>
-			<!-- <h1>Test.github.io</h1> -->
-
-<section class="section__about">
+			<section class="section__about">
 	<div class="about__wrapper">
 		<div class="about__main">
 			<div class="about__main__pic">
-				<img src="" alt="">
+				<div class="about__main__pic--inside" style="background-image: url('/assets/img/about.jpg')"></div>
 			</div>
 
 			<div class="about__main__info">
-				<h1>Name</h1>
-				<div class="about__main_desc">
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis orci pellentesque tellus pretium molestie. Integer interdum scelerisque sodales. Mauris at laoreet enim, at fringilla ipsum. Vestibulum tincidunt risus at leo ullamcorper sollicitudin. Aliquam et rutrum quam. Phasellus varius commodo pulvinar. Donec varius at mauris ut semper.</p>
+				<div class="about__main__info__wrapper">
+					<h1>About Me</h1>
+					<div class="about__main_desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis orci pellentesque tellus pretium molestie. Integer interdum scelerisque sodales. Mauris at laoreet enim, at fringilla ipsum. Vestibulum tincidunt risus at leo ullamcorper sollicitudin. Aliquam et rutrum quam. Phasellus varius commodo pulvinar. Donec varius at mauris ut semper.</p>
 
-					<p>Fusce sit amet convallis libero, eget scelerisque ex. Cras sit amet aliquam nunc. Phasellus ut justo id risus tincidunt iaculis eget vel massa. Pellentesque cursus magna nibh, in molestie sem interdum posuere. Donec consequat nibh non ligula aliquet, eu ultricies leo pellentesque. Nullam interdum dictum dignissim. Aliquam fermentum lacus felis, ut efficitur velit tempus eget. Maecenas vestibulum vehicula volutpat. Quisque eget faucibus tortor. Cras ultricies ante mi, ut volutpat magna congue vitae. Vivamus nec malesuada elit. Praesent in aliquam arcu, nec tincidunt turpis. </p>
-				</div>
-				<div class="btn">
-					<a href="">Read More</a>
+<p>Line 2.</p>
+
+					</div>
+					<div class="btn">
+						<a href="/about.html">Read More</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="1">
-	<h1>Test</h1>
+<section class="section__events">
+	<div class="section__wrapper">
+		<div class="section__title">
+			<h1>Upcoming Events</h1>
+		</div>
+
+		<div class="section__content">
+			<div class="list__events">
+				<ul>
+					
+					<li>
+						<a href="#">
+							<figure>
+								<div class="figure__img">
+									<div style="background-image: url('/assets/img/events.jpg')"></div>
+								</div>
+								<figcaption>
+									<h2>Chemical Crystallography Symposium 2099</h2>
+									<span>02/01/2099</span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<figure>
+								<div class="figure__img">
+									<div style="background-image: url('/assets/img/events.jpg')"></div>
+								</div>
+								<figcaption>
+									<h2>The National Chemistry Conference</h2>
+									<span>01/01/2019</span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<figure>
+								<div class="figure__img">
+									<div style="background-image: url('/assets/img/events.jpg')"></div>
+								</div>
+								<figcaption>
+									<h2>Organic Chemistry Seminar</h2>
+									<span>02/01/2019</span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="alt__background"><span></span></div>
+</section>
+
+<section class="section__news">
+	<div class="section__wrapper">
+		<div class="section__title">
+			<h1>News</h1>
+		</div>
+
+		<div class="section__content">
+			
+		</div>
+	</div>
 </section>
 		</main>
 	</body>

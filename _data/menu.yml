@@ -1,6 +1,6 @@
 - name: Home
   link: /
-- name: About Me
+- name: About me
   link: /about.html
 - name: Research
   link: /research.html

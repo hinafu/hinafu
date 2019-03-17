@@ -1,2 +1,8 @@
 collections:
-  authors:
+  events:
+
+defaults:
+  - scope:
+      path: "assets/img/bckgrnd"
+    values:
+      background: true

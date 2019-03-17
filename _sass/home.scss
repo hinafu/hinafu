@@ -1,0 +1,44 @@
+.about__main {
+  width: 100%;
+  height: calc(100vh - 250px);
+  min-height: 600px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.about__main__pic {
+  width: 100%;
+}
+
+.about__main__pic {
+  width: 50%;
+  height: 100%;
+}
+
+.about__main__pic--inside {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.about__main__info {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    color: $main-color;
+    font-size: 60px;
+  }
+
+  .about__main_desc {
+    max-width: 600px;
+    p {
+      margin: 15px 0 0 0;
+      font-size: 15px;
+      text-align: justify;
+    }
+  }
+}
