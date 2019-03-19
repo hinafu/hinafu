@@ -7,17 +7,21 @@ header_text_sub: Alt
 	<head>
 		<meta charset="utf-8">
 		<title>{{ page.title }}</title>
-		<link href="https://fonts.googleapis.com/css?family=Markazi+Text:400,500,600,700" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Adamina|Lustria|Philosopher|Sura" rel="stylesheet">
 		<link rel="stylesheet" href="/assets/css/styles.css">
 		<link rel="stylesheet" href="/assets/css/slick.css">
+		<link rel="stylesheet" href="/assets/css/jquery-ui.min.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/jquery-ui.min.js"></script>
 		<script src="assets/js/main.js"></script>
 	</head>
 	<body>
 		<div class="header__wrapper">
-			<header>
+			{% if page._page == "home" or page._page == "home2" or page._page == "home3" %}
+			<header {% if page._page == "home2" %}class="home2"{% endif %}{% if page._page == "home3" %}class="home3"{% endif %}>
 				<div class="header__page">
 					<div class="header__logo">
 						<i class="icon-logo"></i>
@@ -36,7 +40,11 @@ header_text_sub: Alt
 						{% endfor %}
 					</div>
 				</div>
+
+				<div class="values_value">50%</div>
+				<div class="values"></div>
 			</header>
+			{% endif %}
 
 			<section class="section__menu">
 				<div class="header__page">

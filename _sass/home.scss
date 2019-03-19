@@ -22,23 +22,31 @@
   height: 100%;
 }
 
+.about__main__info__wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .about__main__info {
   width: 50%;
-  padding: 10px;
   display: flex;
   align-items: center;
 
   h1 {
     color: $main-color;
-    font-size: 60px;
+    font-size: 30px;
   }
 
   .about__main_desc {
     max-width: 600px;
     p {
       margin: 15px 0 0 0;
-      font-size: 15px;
       text-align: justify;
     }
   }
+}
+
+.about__main__read_more {
+  float: right;
 }

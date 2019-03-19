@@ -2,10 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cabin", sans-serif; }
+  font-family: "Lustria", sans-serif; }
+
+::selection {
+  background: #6D485C;
+  color: white; }
+
+a {
+  transition: 0.25s; }
+  a:hover {
+    opacity: 0.8; }
 
 h1, h2, h3 {
-  font-family: "Markazi Text", serif;
+  font-family: "Adamina", serif;
   font-weight: normal; }
 
 a {
@@ -22,10 +31,28 @@ ul {
 header {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 100vh;
   overflow: hidden; }
   header * {
-    color: white; }
+    color: black; }
+
+.home2 *, .home3 * {
+  color: white; }
+
+.values {
+  width: 98%;
+  position: absolute !important;
+  z-index: 9999;
+  top: 30px;
+  left: 1%; }
+
+.values_value {
+  position: absolute !important;
+  z-index: 9999;
+  top: 10px;
+  left: 5px;
+  color: yellow;
+  font-size: 20px; }
 
 .header__page {
   position: relative;
@@ -43,12 +70,18 @@ header {
     height: 100%; }
 
 .header__background__over {
-  background-color: #00208a;
-  opacity: 0.50;
+  background-color: white;
+  opacity: 0.5;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 4; }
+
+.home2 .header__background__over {
+  background-color: black; }
+
+.home3 .header__background__over {
+  background-color: #6D485C; }
 
 .header__background__list {
   position: absolute;
@@ -70,13 +103,22 @@ header .header__page {
 
 header .header__text {
   text-align: center; }
+  header .header__text * {
+    font-family: "philosopher", serif; }
+  header .header__text h1 {
+    display: block;
+    margin: 20px 0 0 0;
+    font-size: 60px; }
+  header .header__text h2 {
+    display: none; }
 
 header .header__logo {
   padding: 10px 0; }
   header .header__logo i {
-    font-size: 80px; }
+    font-size: 200px; }
 
 .section__menu {
+  background-color: #6D485C;
   width: 100%;
   display: flex;
   justify-content: center; }
@@ -84,14 +126,13 @@ header .header__logo {
     display: none; }
   .section__menu nav a {
     display: inline-block;
-    padding: 15px 20px;
-    transition: 0.25s; }
-    .section__menu nav a:hover {
-      color: #00208a; }
+    padding: 25px 20px;
+    transition: 0.25s;
+    color: white; }
 
 .menu__current {
-  color: #00208a;
-  border-bottom: 2px solid #00208a;
+  color: #6D485C;
+  border-bottom: 2px solid #6D485C;
   font-weight: 500; }
 
 .alt_menu {
@@ -112,31 +153,32 @@ header .header__logo {
     justify-content: center; }
     .alt_menu .header__text h1 {
       line-height: 20px;
-      color: #00208a; }
+      color: #6D485C; }
     .alt_menu .header__text h2 {
       font-size: 20px;
-      color: #00208a; }
+      color: #6D485C; }
   .alt_menu .header__logo {
     height: 52px;
     display: flex;
     align-items: center; }
     .alt_menu .header__logo i {
       font-size: 40px;
-      color: #00208a; }
+      color: #6D485C; }
 
 .btn {
   display: inline-block;
   margin: 25px 0;
   transition: 0.25s;
-  border: 1px solid #00208a; }
+  border: 1px solid #6D485C; }
   .btn a {
     display: block;
     padding: 15px 20px;
     transition: 0.25s;
-    color: #00208a; }
+    color: #6D485C;
+    font-size: 14px; }
   .btn:hover {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-    background-color: #00208a;
+    background-color: #6D485C;
     border: 1px solid transparent; }
     .btn:hover a {
       color: white; }
@@ -152,10 +194,10 @@ section {
   padding: 30px 0;
   z-index: 10; }
   .section__wrapper .section__title h1 {
-    font-size: 60px; }
+    font-size: 30px; }
 
 .alt__background {
-  background-color: #00208a;
+  background-color: #6D485C;
   opacity: 0.05;
   width: 100%;
   height: 100%;
@@ -199,11 +241,18 @@ section {
   .list__events figcaption h2 {
     line-height: 24px;
     height: 48px;
-    color: #00208a; }
+    font-size: 15px;
+    color: #6D485C; }
   .list__events figcaption span {
     display: inline-block;
     margin: 10px 0 0 0;
-    font-size: 13px; }
+    font-size: 12px; }
+
+.general__text p {
+  font-size: 14px; }
+  .general__text p a {
+    color: #6D485C;
+    text-decoration: underline; }
 
 .about__main {
   width: 100%;
@@ -225,20 +274,26 @@ section {
   width: 100%;
   height: 100%; }
 
+.about__main__info__wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto; }
+
 .about__main__info {
   width: 50%;
-  padding: 10px;
   display: flex;
   align-items: center; }
   .about__main__info h1 {
-    color: #00208a;
-    font-size: 60px; }
+    color: #6D485C;
+    font-size: 30px; }
   .about__main__info .about__main_desc {
     max-width: 600px; }
     .about__main__info .about__main_desc p {
       margin: 15px 0 0 0;
-      font-size: 15px;
       text-align: justify; }
+
+.about__main__read_more {
+  float: right; }
 
 @font-face {
   font-family: 'Markazi Text';
